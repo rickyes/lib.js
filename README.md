@@ -1,2 +1,2 @@
-# lib.js
+# luckly.js
 Basic high-level data structure library
