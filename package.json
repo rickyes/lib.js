@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Basic high-level data structure library",
   "main": "index.js",
+  "typings": "lucky.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/rickyes/lucky.js/issues"
   },
-  "homepage": "https://github.com/rickyes/lucky.js#readme"
+  "homepage": "https://github.com/rickyes/lucky.js#readme",
+  "devDependencies": {
+    "tap": "^12.0.1"
+  }
 }
