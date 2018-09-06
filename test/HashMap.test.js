@@ -2,7 +2,7 @@
 
 const tap = require('tap');
 const test = tap.test;
-const {HashMap} = require('..');
+const {HashMap, LinkedList} = require('..');
 
 const hashMap = new HashMap();
 
