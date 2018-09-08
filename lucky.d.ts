@@ -13,7 +13,13 @@ declare namespace Lucky {
     
     unshift(value: T): number;
     
-    pop(): any;
+    pollFirst(): T;
+
+    pop(): T;
+
+    peek(): T;
+
+    peekLast(): T;
     
     get(index: number): T;
     

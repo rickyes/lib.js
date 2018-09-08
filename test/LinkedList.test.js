@@ -40,3 +40,51 @@ test('unshift', (t) => {
   t.equal(twoValue, 'one');
   t.end();
 });
+
+test('pollFirst', (t) => {
+  const linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  const value = linkedList.pollFirst();
+  const oneValue = linkedList.get(0);
+  t.equal(value, 'one');
+  t.equal(oneValue, 'two');
+  t.end();
+});
+
+test('peek', (t) => {
+  const linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  const value = linkedList.peek();
+  const oneValue = linkedList.get(0);
+  t.equal(value, 'one');
+  t.equal(oneValue, 'one');
+  t.end();
+});
+
+test('pop', (t) => {
+  const linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  const value = linkedList.pop();
+  const oneValue = linkedList.get(0);
+  const size = linkedList.size();
+  t.equal(value, 'two');
+  t.equal(oneValue, 'one');
+  t.equal(size, 1);
+  t.end();
+});
+
+test('peekLast', (t) => {
+  const linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  const value = linkedList.peekLast();
+  const oneValue = linkedList.peek();
+  const size = linkedList.size();
+  t.equal(value, 'two');
+  t.equal(oneValue, 'one');
+  t.equal(size, 2);
+  t.end();
+});

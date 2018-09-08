@@ -1,4 +1,4 @@
-# luckly.js
+# lucky.js
 Basic high-level data structure library
 
 [![Travis](https://img.shields.io/travis/rickyes/lucky.js.svg?style=for-the-badge)](https://travis-ci.org/rickyes/lucky.js)
