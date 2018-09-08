@@ -11,7 +11,7 @@ declare namespace Lucky {
   interface LinkedList {
     add(value: T): number;
     
-    push(value: any): void;
+    unshift(value: T): number;
     
     pop(): any;
     
