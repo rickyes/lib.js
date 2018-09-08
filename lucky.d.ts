@@ -25,13 +25,13 @@ declare namespace Lucky {
     
     size(): number;
     
-    remove(index: number): void;
+    remove(index: number): T;
     
     removeAll(): void;
     
     isEmpty(): boolean;
     
-    clear(): void;
+    clear(): number;
   }
   
   interface HashMapFactory {

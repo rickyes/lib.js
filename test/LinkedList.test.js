@@ -88,3 +88,57 @@ test('peekLast', (t) => {
   t.equal(size, 2);
   t.end();
 });
+
+test('remove', (t) => {
+  let linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  linkedList.add('three');
+  let twoValue = linkedList.remove(1);
+  let size = linkedList.size();
+  let threeValue = linkedList.get(1);
+  t.equal(twoValue, 'two');
+  t.equal(size, 2);
+  t.equal(threeValue, 'three');
+
+  linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  let oneValue = linkedList.remove(0);
+  size = linkedList.size();
+  twoValue = linkedList.get(0);
+  t.equal(oneValue, 'one');
+  t.equal(size, 1);
+  t.equal(twoValue, 'two');
+
+  linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  twoValue = linkedList.remove(1);
+  size = linkedList.size();
+  t.equal(twoValue, 'two');
+  t.equal(size, 1);
+
+  t.end();
+});
+
+test('isEmpty', (t) => {
+  const linkedList = new LinkedList();
+  let isEmpty = linkedList.isEmpty();
+  t.equal(isEmpty, true);
+  linkedList.add('one');
+  isEmpty = linkedList.isEmpty();
+  t.equal(isEmpty, false);
+  t.end();
+});
+
+test('clear', (t) => {
+  const linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  let size = linkedList.size();
+  t.equal(size, 2);
+  size = linkedList.clear();
+  t.equal(size, 0);
+  t.end();
+});
