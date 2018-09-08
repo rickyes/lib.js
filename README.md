@@ -11,7 +11,10 @@ Basic high-level data structure library
 $ npm i lucky.js --save
 ```
 
-## Get Start
+## API
+See the detailed [API Reference](./docs/index.md).
+
+## Example
 
 ``` js
 'use strict';
