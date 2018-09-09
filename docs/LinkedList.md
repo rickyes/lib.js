@@ -45,3 +45,7 @@
 ### `clear(): number`
 
 从列表中删除所有元素， 返回列表未删除前的元素数量。
+
+### `removeByValue(value: any, index: number): number;`
+
+表头开始检索从列表中删除指定第几次（默认为1）出现的元素，返回元素的索引。

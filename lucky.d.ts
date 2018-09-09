@@ -26,6 +26,8 @@ declare namespace Lucky {
     size(): number;
     
     remove(index: number): any;
+
+    removeByValue(value: any, index: number): number;
     
     isEmpty(): boolean;
     

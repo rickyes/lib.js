@@ -142,3 +142,19 @@ test('clear', (t) => {
   t.equal(size, 0);
   t.end();
 });
+
+test('removeByValue', (t) => {
+  const linkedList = new LinkedList();
+  linkedList.add('one');
+  linkedList.add('two');
+  linkedList.add('three');
+  let position = linkedList.removeByValue('one');
+  t.equal(position, 0);
+  position = linkedList.removeByValue('three');
+  t.equal(position, 1);
+  linkedList.add('two');
+  linkedList.add('four');
+  position = linkedList.removeByValue('two', 2);
+  t.equal(position, 1);
+  t.end();
+});
