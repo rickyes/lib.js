@@ -29,6 +29,8 @@ test('get', (t) => {
   t.equal(value, 1);
   value = hashmap.get('two');
   t.equal(value, 'twoValue');
+  value = hashmap.get('three');
+  t.equal(value, null);
   t.end();
 });
 
