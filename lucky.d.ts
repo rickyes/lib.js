@@ -1,6 +1,7 @@
 declare namespace Lucky {
   interface HashMap {
-    put(key: any, value: any): any;
+    put(key: string, value: any): number;
+    size(): number;
     get(key: any): any;
   }
 
