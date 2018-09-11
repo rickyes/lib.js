@@ -5,6 +5,7 @@ node_js:
 install:
 - npm install -g codecov tap
 script:
+- make install
 - make cov
 after_script:
-- tap --coverage-report=text-lcov && codecov
+- tap --coverage-report=text-lcov > coverage.lcov && codecov
