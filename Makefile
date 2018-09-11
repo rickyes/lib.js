@@ -5,6 +5,9 @@ install:
 	@npm i --registry=https://registry.npm.taobao.org
 
 unit:
-	$(TAP) -j4 $(ITEMS)
+	@$(TAP) -j4 $(ITEMS)
 
-.PHONY: install unit
+cov:
+	@$(TAP) -j4 ${ITEMS} --cov
+
+.PHONY: install
