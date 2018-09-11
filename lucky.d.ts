@@ -3,6 +3,7 @@ declare namespace Lucky {
     put(key: string, value: any): number;
     size(): number;
     get(key: string): any;
+    isEmpty(): boolean;
   }
 
   interface BinaryTree {

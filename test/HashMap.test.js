@@ -34,6 +34,16 @@ test('get', (t) => {
   t.end();
 });
 
+test('isEmpty', (t) => {
+  const hashmap = new HashMap();
+  let isEmpty = hashmap.isEmpty();
+  t.equal(isEmpty, true);
+  hashmap.put('one', 1);
+  isEmpty = hashmap.isEmpty();
+  t.equal(isEmpty, false);
+  t.end();
+});
+
 // test('test', (t) => {
   // const hashmap = new HashMap();
   // let hash = hashmap._hash('test');
