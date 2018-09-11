@@ -21,6 +21,17 @@ test('size', (t) => {
   t.end();
 });
 
+test('get', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('one', 1);
+  hashmap.put('two', 'twoValue');
+  let value = hashmap.get('one');
+  t.equal(value, 1);
+  value = hashmap.get('two');
+  t.equal(value, 'twoValue');
+  t.end();
+});
+
 // test('test', (t) => {
   // const hashmap = new HashMap();
   // let hash = hashmap._hash('test');

@@ -2,7 +2,7 @@ declare namespace Lucky {
   interface HashMap {
     put(key: string, value: any): number;
     size(): number;
-    get(key: any): any;
+    get(key: string): any;
   }
 
   interface BinaryTree {
