@@ -58,6 +58,16 @@ test('clear', (t) => {
   t.end();
 });
 
+test('replace', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('one', 1);
+  let oldValue = hashmap.replace('one', 1);
+  t.equal(oldValue, null);
+  oldValue = hashmap.replace('one', '1');
+  t.equal(oldValue, 1);
+  t.end();
+});
+
 // test('test', (t) => {
   // const hashmap = new HashMap();
   // let hash = hashmap._hash('test');
