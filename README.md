@@ -1,5 +1,5 @@
 # lucky.js
-Basic high-level data structure library
+Basic high-level data structure library for Node.js, inspired by Java
 
 [![Travis](https://img.shields.io/travis/rickyes/lucky.js.svg?style=for-the-badge)](https://travis-ci.org/rickyes/lucky.js)
 [![Node Version](https://img.shields.io/badge/node-%3E=9.0.0-brightgreen.svg?longCache=true&style=for-the-badge)](https://www.npmjs.com/package/lucky.js)
@@ -20,11 +20,20 @@ See the detailed [API Reference](./docs/index.md).
 ``` js
 'use strict';
 
-const {LinkedList} = require('lucky.js');
+const {LinkedList, HashMap} = require('lucky.js');
 const linkedList = new LinkedList();
+const hashMap = new HashMap();
 
-const position = linkedList.add('one'); // 0
-const value = linkedList.get(0); // one
+// LinkedList
+linkedList.add('one');
+linkedList.add('two');
+const topValue = linkedList.peek(); // one
+
+
+// HashMap
+hashmap.put('one', 1);
+const value = hashmap.get('one'); // 1
+const oldValue = hashmap.replace('one', 1); // null
 ```
 
 ## Author

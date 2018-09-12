@@ -39,7 +39,7 @@ declare namespace Lucky {
   }
   
   interface HashMapFactory {
-    new (): HashMap;
+    new (initialCapacity?: number, loadFactor?: number): HashMap;
   }
 
   interface BinaryTreeFactory {
