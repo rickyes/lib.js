@@ -4,8 +4,8 @@ node_js:
 - "9"
 install:
 - npm install -g codecov tap
-script:
 - make install
+script:
 - make cov
 after_script:
 - tap --coverage-report=text-lcov > coverage.lcov && codecov
