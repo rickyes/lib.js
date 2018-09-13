@@ -7,6 +7,7 @@ declare namespace Lucky {
     clear(): number;
     replace(key: string, newValue: any): any;
     containsKey(key: string): boolean;
+    containsValue(value: any): boolean;
   }
 
   interface BinaryTree {

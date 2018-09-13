@@ -78,3 +78,18 @@ test('containsKey', (t) => {
   t.equal(hasKey, false);
   t.end();
 });
+
+test('containsValue', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('one', 1);
+  hashmap.put('two', '1');
+  let hasValue = hashmap.containsValue(1);
+  t.equal(hasValue, true);
+  hasValue = hashmap.containsValue('1');
+  t.equal(hasValue, true);
+  hasValue = hashmap.containsValue(null);
+  t.equal(hasValue, false);
+  hasValue = hashmap.containsValue(2);
+  t.equal(hasValue, false);
+  t.end();
+});
