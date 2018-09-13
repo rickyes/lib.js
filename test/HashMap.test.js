@@ -93,3 +93,27 @@ test('containsValue', (t) => {
   t.equal(hasValue, false);
   t.end();
 });
+
+test('constructor', (t) => {
+  try {
+    const hashmap = new HashMap(-1);
+  } catch (error) {
+    t.type(error, Error);
+    t.equal(error.message, 'Illegal initial capacity: -1');
+  }
+
+  try {
+    const hashmap = new HashMap(16, -1);
+  } catch (error) {
+    t.type(error, Error);
+    t.equal(error.message, 'Illegal load factor: -1');
+  }
+
+  try {
+    const hashmap = new HashMap(16, 'string');
+  } catch (error) {
+    t.type(error, Error);
+    t.equal(error.message, 'Illegal load factor: string');
+  }
+  t.end();
+});
