@@ -117,3 +117,18 @@ test('constructor', (t) => {
   }
   t.end();
 });
+
+test('clone', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('one', 1);
+  hashmap.put('two', '1');
+  const hashmapTemp = hashmap.clone();
+  let value = hashmapTemp.get('one');
+  t.equal(value, 1);
+  hashmapTemp.put('three', 'three');
+  let size = hashmapTemp.size();
+  let oldSize = hashmap.size();
+  t.equal(size, 3);
+  t.equal(oldSize, 2);
+  t.end();
+});
