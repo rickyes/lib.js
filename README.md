@@ -12,6 +12,18 @@ Basic high-level data structure library for Node.js, inspired by Java
 $ npm i lucky.js --save
 ```
 
+## Features
+- [x] LinkedList
+- [x] HashMap
+- [ ] DoubleLinkedList
+- [ ] CycleLinkedList
+- [ ] BinaryTree
+- [ ] RedBlackTree
+- [ ] AVLTree
+- [ ] BTree
+- [ ] BPlusTree
+- [ ] Graph
+
 ## API
 See the detailed [API Reference](./docs/index.md).
 
