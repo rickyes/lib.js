@@ -21,3 +21,21 @@
 
 ### `replace(key: string, newValue: any): any`
 只有当目标映射到某个值时，才能替换指定键的条目(新值和旧值做全等对比)。
+
+### `containsKey(key: string): boolean`
+是否存在该key。
+
+### `containsValue(value: any): boolean`
+是否存在该值。
+
+### `clone(): HashMap`
+深拷贝整个HashMap
+
+### `keys(): Array<string>`
+检索所有的key, 构造数组返回。
+
+### `values(): Array<any>`
+检索所有的value, 构成数组返回。
+
+### `remove(key: string): any`
+删除指定key的映射，返回删除的映射的value。
