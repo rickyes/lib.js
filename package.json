@@ -1,6 +1,6 @@
 {
   "name": "lucky.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Basic high-level data structure library",
   "main": "index.js",
   "typings": "lucky.d.ts",

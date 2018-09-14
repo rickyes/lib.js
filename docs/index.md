@@ -1,5 +1,5 @@
 <!-- version -->
-# 0.0.3 API Reference For lucky.js
+# 0.0.4 API Reference For lucky.js
 <!-- versionstop -->
 
 <!-- toc -->
