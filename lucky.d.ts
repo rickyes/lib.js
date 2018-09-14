@@ -9,6 +9,7 @@ declare namespace Lucky {
     containsKey(key: string): boolean;
     containsValue(value: any): boolean;
     clone(): HashMap;
+    keys(): Array<string>;
   }
 
   interface BinaryTree {

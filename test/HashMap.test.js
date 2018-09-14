@@ -132,3 +132,12 @@ test('clone', (t) => {
   t.equal(oldSize, 2);
   t.end();
 });
+
+test('keys', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('one', 1);
+  hashmap.put('two', '1');
+  let keys = hashmap.keys();
+  t.equal(keys.length, 2);
+  t.end();
+});
