@@ -151,3 +151,22 @@ test('values', (t) => {
   t.equal(values.length, 2);
   t.end();
 });
+
+test('remove', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('test', 'test');
+  hashmap.put('tet', 'tet');
+  hashmap.put('tst', 'tst');
+  let size = hashmap.size();
+  t.equal(size, 3);
+  let value = hashmap.remove('tet');
+  t.equal(value, 'tet');
+  size = hashmap.size();
+  t.equal(size, 2);
+  hashmap.put('tet', 'tet');
+  value = hashmap.remove('tet');
+  t.equal(value, 'tet');
+  size = hashmap.size();
+  t.equal(size, 2);
+  t.end();
+});

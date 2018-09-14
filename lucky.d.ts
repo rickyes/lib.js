@@ -11,6 +11,7 @@ declare namespace Lucky {
     clone(): HashMap;
     keys(): Array<string>;
     values(): Array<any>;
+    remove(key: string): any;
   }
 
   interface BinaryTree {
