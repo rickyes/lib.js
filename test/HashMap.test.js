@@ -141,3 +141,13 @@ test('keys', (t) => {
   t.equal(keys.length, 2);
   t.end();
 });
+
+test('values', (t) => {
+  const hashmap = new HashMap();
+  hashmap.put('one', 1);
+  hashmap.put('two', '1');
+  hashmap.put(null, 2);
+  let values = hashmap.values();
+  t.equal(values.length, 2);
+  t.end();
+});
