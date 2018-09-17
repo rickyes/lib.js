@@ -170,3 +170,12 @@ test('remove', (t) => {
   t.equal(size, 2);
   t.end();
 });
+
+test('resize', (t) => {
+  const hashmap = new HashMap(2);
+  hashmap.put('one', 1);
+  hashmap.put('two', 2);
+  hashmap.put('three', 3);
+  hashmap.put('four', 4);
+  t.end();
+});
