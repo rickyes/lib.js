@@ -20,27 +20,16 @@ declare namespace Lucky {
 
   interface LinkedList {
     add(value: any): number;
-    
     unshift(value: any): number;
-    
     pollFirst(): any;
-
     pop(): any;
-
     peek(): any;
-
     peekLast(): any;
-    
     get(index: number): any;
-    
     size(): number;
-    
     remove(index: number): any;
-
     removeByValue(value: any, index: number): number;
-    
     isEmpty(): boolean;
-    
     clear(): number;
   }
   
