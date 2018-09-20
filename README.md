@@ -16,6 +16,7 @@ $ npm i lucky.js --save
 - [x] LinkedList
 - [x] HashMap
 - [ ] DoubleLinkedList
+- [ ] LinkedHashMap
 - [ ] CycleLinkedList
 - [ ] BinaryTree
 - [ ] RedBlackTree
