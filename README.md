@@ -13,17 +13,12 @@ $ npm i lucky.js --save
 ```
 
 ## Features
-- [x] LinkedList
-- [x] HashMap
-- [ ] DoubleLinkedList
-- [ ] LinkedHashMap
-- [ ] CycleLinkedList
-- [ ] BinaryTree
-- [ ] RedBlackTree
+- [x] LinkedList 链表
+- [x] HashMap 哈希
+- [ ] RedBlackTree 红黑树
+- [ ] MinimumHeap 最小堆
 - [ ] AVLTree
-- [ ] BTree
-- [ ] BPlusTree
-- [ ] Graph
+- [ ] BTree B+树
 
 ## API
 See the detailed [API Reference](./docs/index.md).
